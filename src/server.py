@@ -20,7 +20,8 @@ def main():
     parser.add_argument("--card-url", type=str, help="URL to advertise in the agent card")
     args = parser.parse_args()
 
-    # FILL IN YOUR AGENT CARD
+    # Fill in your agent card
+    # See: https://a2a-protocol.org/latest/tutorials/python/3-agent-skills-and-card/
     
     skill = AgentSkill(
         id="",

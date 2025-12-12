@@ -1,5 +1,3 @@
-from pydantic import ValidationError
-
 from a2a.server.agent_execution import AgentExecutor, RequestContext
 from a2a.server.events import EventQueue
 from a2a.server.tasks import TaskUpdater
