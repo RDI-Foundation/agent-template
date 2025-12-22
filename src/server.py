@@ -20,20 +20,17 @@ def main():
     parser.add_argument("--card-url", type=str, help="URL to advertise in the agent card")
     args = parser.parse_args()
 
-    # Fill in your agent card
-    # See: https://a2a-protocol.org/latest/tutorials/python/3-agent-skills-and-card/
-    
     skill = AgentSkill(
-        id="",
-        name="",
-        description="",
-        tags=[],
-        examples=[]
+        id="chat",
+        name="Chat",
+        description="Answer questions and have conversations",
+        tags=["conversation"],
+        examples=["Hello!", "Tell me a joke"]
     )
 
     agent_card = AgentCard(
-        name="",
-        description="",
+        name="Simple Agent",
+        description="A conversational LLM agent",
         url=args.card_url or f"http://{args.host}:{args.port}/",
         version='1.0.0',
         default_input_modes=['text'],
