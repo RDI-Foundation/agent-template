@@ -29,6 +29,8 @@ pyproject.toml    # Python dependencies
 
 4. **Write your tests** - Add custom tests for your agent in [`tests/test_agent.py`](tests/test_agent.py)
 
+For a concrete example of implementing an agent using this template, see this [draft PR](https://github.com/RDI-Foundation/agent-template/pull/8).
+
 ## Running Locally
 
 ```bash
